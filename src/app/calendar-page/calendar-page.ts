@@ -24,12 +24,19 @@ export class CalendarPage implements OnInit {
     this.generateCalendar();
   }
 
+  currentMonthYear = '';
+
   private generateCalendar(): void {
     this.days = [];
 
     const today = new Date();
     const year = today.getFullYear();
     const month = today.getMonth();
+
+    this.currentMonthYear = today.toLocaleDateString('en-US', {
+      month: 'long',
+      year: 'numeric'
+    });
 
     const firstDay = new Date(year, month, 1);
     const lastDay = new Date(year, month + 1, 0);
