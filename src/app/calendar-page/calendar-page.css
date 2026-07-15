@@ -1,0 +1,48 @@
+.calendar {
+  margin-left: 32px;
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(7, 80px);
+  gap: 12px;
+  justify-content: center;
+}
+
+.weekday {
+  width: 80px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.day-card {
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 8px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+
+.day-card:not(.empty):hover {
+  border-color: rgba(25, 118, 210, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.weekend {
+  background-color: #e8e8e8;
+}
+
+.empty {
+  visibility: hidden;
+}

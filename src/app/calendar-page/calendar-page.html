@@ -1,1 +1,20 @@
-<p>calendar-page works!</p>
+<div class="calendar mt-3">
+
+  @for (weekday of weekdays; track weekday) {
+    <div class="weekday">
+      {{ weekday }}
+    </div>
+  }
+
+  @for (day of days; track $index) {
+    <mat-card
+      class="day-card"
+      [class.weekend]="day.weekend"
+      [class.empty]="!day.day">
+
+      @if (day.day) {
+        <span>{{ day.day }}</span>
+      }
+    </mat-card>
+  }
+</div>
