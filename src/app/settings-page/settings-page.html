@@ -1,1 +1,34 @@
-<p>settings-page works!</p>
+
+<div class="mt-4 ms-4">
+  <form [formGroup]="form" (ngSubmit)="save()">
+  <mat-form-field appearance="outline" class="w-100 mb-3">
+    <mat-label>Base URL</mat-label>
+    <input
+      matInput
+      formControlName="baseUrl">
+    @if (form.controls.baseUrl.touched && form.controls.baseUrl.hasError('required')) {
+      <mat-error>
+        Base URL is required.
+      </mat-error>
+    }
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="w-100 mb-3">
+    <mat-label>Token</mat-label>
+    <input
+      matInput
+      type="password"
+      formControlName="token">
+    @if (form.controls.token.touched && form.controls.token.hasError('required')) {
+      <mat-error>
+        Token is required.
+      </mat-error>
+    }
+  </mat-form-field>
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit">
+    Save
+  </button>
+</form>
+</div>
