@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ABBV",
+    "name": "Abbvie",
+    "dividendPaymentDate": "01.02.2026"
+  },
+  {
+    "id": "ADM",
+    "name": "Archer Daniels Midland",
+    "dividendPaymentDate": "03.02.2026"
+  },
+  {
+    "id": "CLX",
+    "name": "Clorox",
+    "dividendPaymentDate": "02.07.2026"
+  },
+  {
+    "id": "DGE",
+    "name": "Diageo",
+    "dividendPaymentDate": "06.04.2026"
+  },
+  {
+    "id": "CSCO",
+    "name": "Cisco",
+    "dividendPaymentDate": "09.07.2026"
+  },
+  {
+    "id": "HSY",
+    "name": "Hersheys",
+    "dividendPaymentDate": "12.04.2026"
+  },
+  {
+    "id": "KO",
+    "name": "The Coca-Cola Company",
+    "dividendPaymentDate": "15.07.2026"
+  },
+  {
+    "id": "O",
+    "name": "Realty Income",
+    "dividendPaymentDate": "19.04.2026"
+  },
+  {
+    "id": "HSY",
+    "name": "Hersheys",
+    "dividendPaymentDate": "22.07.2026"
+  },
+  {
+    "id": "PEP",
+    "name": "Pepsi",
+    "dividendPaymentDate": "30.04.2026"
+  },
+  {
+    "id": "TXN",
+    "name": "Texas Instruments",
+    "dividendPaymentDate": "30.04.2026"
+  },
+  {
+    "id": "WSO",
+    "name": "Watsco",
+    "dividendPaymentDate": "06.06.2026"
+  },
+  {
+    "id": "SPG",
+    "name": "Simon Property Group",
+    "dividendPaymentDate": "31.07.2026"
+  }
+]

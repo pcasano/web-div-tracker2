@@ -12,11 +12,24 @@
     <mat-card
       class="day-card"
       [class.weekend]="day.weekend"
-      [class.empty]="!day.day">
+      [class.empty]="!day.day"
+      [class.dividend]="hasDividend(day)">
 
       @if (day.day) {
-        <span>{{ day.day }}</span>
+
+        <span class="day-number">
+      {{ day.day }}
+    </span>
+
+        @if (getDividendCount(day) > 0) {
+          <span class="payment-badge">
+        {{ getDividendCount(day) }}
+      </span>
+        }
+
       }
+
     </mat-card>
   }
+
 </div>
